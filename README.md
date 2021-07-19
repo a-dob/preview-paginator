@@ -37,7 +37,7 @@ Usage
 
 You may paginate Eloquent queries. 
 In this example, we will paginate the ```App\Models\User``` model 
-and indicate that we plan to display 15 records per page. 
+and indicate that we plan to display 5 records on first page and 15 records on the remaining pages. 
 As you can see, the syntax is nearly identical to paginating query builder results:
 
 ```
@@ -46,14 +46,14 @@ use App\Models\User;
 $users = User::previewPaginate(5, 15);
 ```
 
-Of course, you may call the paginate method after setting other constraints on the query,
+Of course, you may call the previewPaginate method after setting other constraints on the query,
 such as where clauses:
 
 ```
 $users = User::where('votes', '>', 100)->previewPaginate(5, 15);
 ```
 
-You may also use the simplePaginate method when paginating Eloquent models:
+You may also use the previewPaginate method when paginating Eloquent models:
 
 ```
 $users = User::where('votes', '>', 100)->previewPaginate(5, 15);
