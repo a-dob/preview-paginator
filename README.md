@@ -63,7 +63,7 @@ The first argument of the previewPaginated method specifies the number of return
 
 The second argument of the previewPaginated method specifies the number of returned models on the remaining pages.
 
-Если в качестве первого аргумента передать null то initial quantity будет определено из указанного свойства модели. 
-Если в модели данное свойство не определено initial quantity будет равным  ```5```
+If null is passed as the first argument, the initial quantity will be defined from the specified model property. 
+If this property is not defined in the model the initial quantity will be ```5```
 
                   
